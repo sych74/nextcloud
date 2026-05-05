@@ -192,6 +192,7 @@ actions:
         nc_url: ${globals.protocol}://${env.domain}
         nc_admin_pass: ${globals.nc_admin_pass}
         version_nextcloud: ${globals.version_nextcloud}
+        baseUrl: ${baseUrl}
   
   setupNode:
     - if (/llsmp/.test("${nodes.cp.nodeType}") || /litespeed/.test("${nodes.cp.nodeType}")):
